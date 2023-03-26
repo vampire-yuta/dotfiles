@@ -2,8 +2,23 @@
 
 dotfiles_root=$(cd $(dirname $0)/.. && pwd)
 
-# dotfilesディレクトリの中身のリンクをホームディレクトリ直下に作成
+# linklist.txtのコメントを削除
+__remove_linklist_comment() {(
+    # '#'以降と空行を削除
+    sed -e 's/\s*#.*//' \
+        -e '/^\s*$/d' \
+        $1
+)}
+
+# シンボリックリンクを作成
 cd ${dotfiles_root}/dotfiles
-for file in .*; do
-    ln -s ${PWD}/${file} ${HOME}
+linklist="linklist.txt"
+[ ! -r "$linklist" ] && return
+__remove_linklist_comment "$linklist" | while read target link; do
+    # ~ や環境変数を展開
+    target=$(eval echo "${PWD}/${target}")
+    link=$(eval echo "${link}")
+    # シンボリックリンクを作成
+    mkdir -p $(dirname ${link})
+    ln -fsn ${target} ${link}
 done

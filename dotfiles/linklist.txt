@@ -1,0 +1,15 @@
+# neovim
+.config/nvim/init.vim                ${HOME}/.config/nvim/init.vim
+.config/nvim/coc-settings.json       ${HOME}/.config/nvim/coc-settings.json
+
+# zsh
+.zshrc                ${HOME}/.zshrc
+
+# tmux
+.tmux/tmux.conf                ${HOME}/.tmux/tmux.conf
+
+# yabai
+.yabairc                ${HOME}/.yabairc
+
+# skhd
+.skhdrc                ${HOME}/.skhdrc
