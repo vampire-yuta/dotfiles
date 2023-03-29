@@ -189,3 +189,11 @@ export EDITOR='/opt/homebrew/bin/nvim'
 eval "$(direnv hook zsh)"
 
 export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
+
+# Created by `pipx` on 2023-03-27 10:09:39
+export PATH="$PATH:/Users/yuta/.local/bin"
+
+
+# kubernetes
+alias k='kubectl'
+[[ /usr/local/bin/kubectl ]] && source <(kubectl completion zsh)
