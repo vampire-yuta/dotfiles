@@ -17,6 +17,7 @@ set noswapfile         " スワップファイル(.swp)を生成しない
 set nobackup           " バックアップファイル(~)を生成しない
 set noundofile         " undoファイル(.un~)を生成しない
 set hlsearch           " 文字列検索ハイライト
+set mouse=
 nnoremap <C-j> <C-^>     "直前バッファに移動
 "set textwidth=2
 "set cursorline
@@ -509,3 +510,15 @@ let g:ale_lint_on_text_changed = 1
 
 " html閉じタグを自動補完
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.vue'
+
+
+" tab
+nnoremap <silent> <leader>tf :<c-u>tabfirst<cr>
+nnoremap <silent> <leader>tl :<c-u>tablast<cr>
+nnoremap <silent> <leader>tn :<c-u>tabnext<cr>
+nnoremap <silent> <leader>tN :<c-u>tabNext<cr>
+nnoremap <silent> <leader>tp :<c-u>tabprevious<cr>
+nnoremap <silent> <leader>te :<c-u>tabedit<cr>
+nnoremap <silent> <leader>tc :<c-u>tabclose<cr>
+nnoremap <silent> <leader>to :<c-u>tabonly<cr>
+nnoremap <silent> <leader>ts :<c-u>tabs<cr>
