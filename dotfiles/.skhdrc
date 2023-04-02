@@ -21,6 +21,12 @@ shift + cmd - l : yabai -m window --swap east
 shift + cmd - 1 : yabai -m window --space 1
 shift + cmd - 2 : yabai -m window --space 2
 shift + cmd - 3 : yabai -m window --space 3
+shift + cmd - 4 : yabai -m window --space 4
+shift + cmd - 5 : yabai -m window --space 5
+shift + cmd - 6 : yabai -m window --space 6
+shift + cmd - 7 : yabai -m window --space 7
+shift + cmd - 8 : yabai -m window --space 8
+shift + cmd - 9 : yabai -m window --space 9
 
 # toggle window fullscreen
 cmd - o : yabai -m window --toggle zoom-fullscreen
@@ -33,6 +39,8 @@ shift + cmd - n : yabai -m space --create;\
 
 ctrl + cmd - h : yabai -m space --focus prev
 ctrl + cmd - l : yabai -m space --focus next
+#ctrl - h : yabai -m space --focus prev
+#ctrl - l : yabai -m space --focus next
 cmd - 1 : yabai -m space --focus 1
 cmd - 2 : yabai -m space --focus 2
 cmd - 3 : yabai -m space --focus 3
