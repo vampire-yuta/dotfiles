@@ -1,21 +1,56 @@
 {
-	"languageserver": {
+  "languageserver": {
     "terraform": {
-      "command": "terraform-lsp",
-      "filetypes": ["terraform","tf"],
+      "command": "terraform-ls",
+      "args": [
+        "serve"
+      ],
+      "filetypes": [
+        "terraform",
+        "tf"
+      ],
       "initializationOptions": {},
       "settings": {}
     },
     "bash": {
       "command": "bash-language-server",
-      "args": ["start"],
-      "filetypes": ["sh"]
+      "args": [
+        "start"
+      ],
+      "filetypes": [
+        "sh"
+      ]
     },
     "golang": {
       "command": "gopls",
-      "rootPatterns": ["go.mod"],
-      "filetypes": ["go"]
+      "rootPatterns": [
+        "go.mod"
+      ],
+      "filetypes": [
+        "go"
+      ]
+    },
+    "vimls": {
+      "command": "vim-language-server",
+      "filetypes": [
+        "vim"
+      ],
+      "initializationOptions": {},
+      "settings": {
+        "vim": {
+          "diagnostic": {
+            "enable": true
+          },
+          "suggest": {
+            "fromRuntimepath": true,
+            "fromVimruntime": true,
+            "externalSnippets": {
+              "vim": "{}"
+            }
+          }
+        }
+      }
     }
-	}
+  }
 }
 

@@ -124,6 +124,8 @@ Plug 'liuchengxu/vista.vim'                         " LSP シンボル、タグ�
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-endwise'
 Plug 'alvan/vim-closetag'  " html閉じタグを自動補完
+Plug 'hashivim/vim-terraform' " terraform syntax highlight
+Plug 'prabirshrestha/vim-lsp' " vimのLSP
 call plug#end()
 
 if !has('gui_running')
