@@ -6,3 +6,10 @@
 ```
 ./scripts/init.sh
 ```
+
+## Windows
+
+```
+cd windows11
+./install.ps1
+```
