@@ -126,6 +126,7 @@ Plug 'tpope/vim-endwise'
 Plug 'alvan/vim-closetag'  " html閉じタグを自動補完
 Plug 'hashivim/vim-terraform' " terraform syntax highlight
 Plug 'prabirshrestha/vim-lsp' " vimのLSP
+Plug 'chrisbra/csv.vim'       " csv編集
 call plug#end()
 
 if !has('gui_running')
@@ -447,7 +448,9 @@ set statusline=%=\ [%{(&fenc!=''?&fenc:&enc)}/%{&ff}]\[%Y]\[%04l,%04v][%p%%]
 " ステータスラインを常に表示
 set laststatus=2
 
-nmap <C-n> :bn<CR>
+" 前のバッファへ移動
+nmap <C-l> :bn<CR>
+" 次のバッファへ移動
 nmap <C-p> :bp<CR>
 
 "
