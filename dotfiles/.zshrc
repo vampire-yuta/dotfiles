@@ -210,3 +210,13 @@ nvm use v18.16.0
 
 # tmux
 alias mux='tmuxinator'
+
+# go
+export GOPATH=$HOME/go
+PATH=$PATH:$GOPATH/bin
+
+source /Users/yuta/.docker/init-zsh.sh || true # Added by Docker Desktop
+
+# postgres
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
