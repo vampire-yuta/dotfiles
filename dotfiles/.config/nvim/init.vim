@@ -127,7 +127,9 @@ Plug 'alvan/vim-closetag'  " html閉じタグを自動補完
 Plug 'hashivim/vim-terraform' " terraform syntax highlight
 Plug 'prabirshrestha/vim-lsp' " vimのLSP
 Plug 'chrisbra/csv.vim'       " csv編集
+Plug 'dart-lang/dart-vim-plugin' " dart Plugin
 call plug#end()
+
 
 if !has('gui_running')
   set t_Co=256
@@ -516,6 +518,8 @@ let g:ale_lint_on_text_changed = 1
 " html閉じタグを自動補完
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.vue'
 
+" dart
+let g:dart_format_on_save = 1 " dartファイル保存時に自動的にフォーマット
 
 " tab
 nnoremap <silent> <leader>tf :<c-u>tabfirst<cr>
