@@ -128,6 +128,7 @@ Plug 'hashivim/vim-terraform' " terraform syntax highlight
 Plug 'prabirshrestha/vim-lsp' " vimのLSP
 Plug 'chrisbra/csv.vim'       " csv編集
 Plug 'dart-lang/dart-vim-plugin' " dart Plugin
+Plug 'thinca/vim-qfreplace' " QuickFix全置換 :Qfreplaceで起動  :%s/case/test/gで置換
 call plug#end()
 
 
