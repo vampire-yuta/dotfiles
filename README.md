@@ -11,5 +11,5 @@
 
 ```
 cd windows11
-./install.ps1
+./install_with_winget.ps1
 ```
