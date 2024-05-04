@@ -89,7 +89,7 @@ Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 " Plug 'VundleVim/Vundle.vim'
 Plug 'stephpy/vim-yaml'
 Plug 'prabirshrestha/vim-lsp' " VimLSP
-Plug 'mattn/vim-lsp-settings' " VimLSP
+Plug 'mattn/vim-lsp-settings' " VimLSP LspInstallServerでインストール LspManagedServerでLSP管理画面呼び出し
 Plug 'yaegassy/coc-ansible', {'do': 'yarn install --frozen-lockfile'} " Ansible-lsp
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-commentary' " CommentOut
@@ -107,8 +107,7 @@ Plug 'jeetsukumaran/vim-buffergator'
 Plug 'vim-scripts/buftabs'
 Plug '~/.config/nvim/unmanagerd_plugins/sweep_trail'
 Plug '~/.config/nvim/unmanagerd_plugins/autofmt'
-Plug '~/.config/nvim/unmanagerd_plugins/qfixhowm-master'
-Plug 'towolf/vim-helm'
+Plug 'towolf/vim-helm' "helmのsyntax hirighter
 Plug 'terryma/vim-multiple-cursors' "ビジュアルモードでCtrl+Nで同時編集
 " Use release branch (recommend)
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -116,9 +115,6 @@ Plug 'dense-analysis/ale'
 
 " Or build from source code by using yarn: https://yarnpkg.com
 Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
-" Plug '~/.config/nvim/unmanagerd_plugins/qfixhowm-master'
-" Plug 'fuenor/qfixhowm'
-" Plug 'fuenor/qfixgrep'
 Plug 'mtth/scratch.vim'
 Plug 'liuchengxu/vista.vim'                         " LSP シンボル、タグを表示および検索
 Plug 'tpope/vim-rails'
@@ -455,40 +451,6 @@ set laststatus=2
 nmap <C-l> :bn<CR>
 " 次のバッファへ移動
 nmap <C-p> :bp<CR>
-
-"
-" qfixown
-"
-set runtimepath+=~/.config/nvim/unmanagerd_plugins/qfixhowm-master
-
-" キーマップリーダー
-let QFixHowm_Key = 'g'
-" howm_dirはファイルを保存したいディレクトリを設定
-let howm_dir             = '/mnt/c/Users/yuta/OneDrive\ -\ 株式会社ヴァンデミックシステム/03_qfixhown'
-let howm_filename        = '%Y/%m/%Y-%m-%d-%H%M%S.txt'
-let howm_fileencoding    = 'utf-8'
-let howm_fileformat      = 'unix'
-" クイックメモのファイル名(月ごと)
-let QFixHowm_QuickMemoFile = 'Qmem-00-%Y-%m-00-000000.txt'
-" QFixHowmのファイルタイプ
-let QFixHowm_FileType = 'qfix_memo'
-"新規エントリのテンプレート
-let QFixHowm_Template = [
-  \"= ",
-  \"",
-  \"%DATE%",
-  \"",
-  \""
-\]
-" タイトル記号を # に変更する
-" let QFixHowm_Title = '#'
-" とりあえず有効にし、なにか問題が起きたら無効化するのをおすすめします
-" プレビューや絞り込みをQuickFix/ロケーションリストの両方で有効化(デフォルト:2)
-let QFixWin_EnableMode = 1
-" QFixHowm/QFixGrepの結果表示にロケーションリストを使用する/しない
-let QFix_UseLocationList = 3
-" キーコードやマッピングされたキー列が完了するのを待つ時間(ミリ秒)
-set timeout timeoutlen=3000 ttimeoutlen=100
 
 " Autofmt
 " 整形用の設定例
