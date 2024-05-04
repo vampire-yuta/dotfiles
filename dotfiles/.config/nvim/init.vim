@@ -1,4 +1,3 @@
-" set number             "行番号を表示
 set nonumber             "行番号を表示
 set signcolumn=yes     " 画面左端にサイン列を常に表示
 set laststatus=2       " 画面最下部に常にステータスラインを表示
@@ -19,14 +18,6 @@ set noundofile         " undoファイル(.un~)を生成しない
 set hlsearch           " 文字列検索ハイライト
 set mouse=
 nnoremap <C-j> <C-^>     "直前バッファに移動
-"set textwidth=2
-"set cursorline
-"set showmatch
-"syntax enable
-"
-"
-"
-"
 
 augroup signcolumn_bg_none
   autocmd!
@@ -131,16 +122,6 @@ call plug#end()
 if !has('gui_running')
   set t_Co=256
 endif
-
-
-" augroup vimrc_vim_plug_install
-"   autocmd!
-"   " 足りないプラグインがあれば :PlugInstall を実行
-"   autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
-"     \| PlugInstall --sync | source $MYVIMRC
-"   \| endif
-" augroup END
-
 
 " VimLSPの設定
 let g:lsp_diagnostics_enabled = 1                        " Diagnosticsを有効にする
@@ -380,34 +361,28 @@ endfunction
 command! -bar Lazygit call Lazygit()
 
 " Indent width
-"if has("autocmd")
-"  "ファイルタイプの検索を有効にする
-"  filetype plugin on
-"  "ファイルタイプに合わせたインデントを利用
-"  filetype indent on
-"  "sw=softtabstop, sts=shiftwidth, ts=tabstop, et=expandtabの略
-"  autocmd FileType c           setlocal sw=4 sts=4 ts=4 et
-"  autocmd FileType html        setlocal sw=4 sts=4 ts=4 et
-"  autocmd FileType ruby        setlocal sw=2 sts=2 ts=2 et
-"  autocmd FileType js          setlocal sw=4 sts=4 ts=4 et
-"  autocmd FileType zsh         setlocal sw=4 sts=4 ts=4 et
-"  autocmd FileType python      setlocal sw=4 sts=4 ts=4 et
-"  autocmd FileType scala       setlocal sw=4 sts=4 ts=4 et
-"  autocmd FileType json        setlocal sw=4 sts=4 ts=4 et
-"  autocmd FileType yml        setlocal sw=2 sts=2 ts=2 et
-"  autocmd FileType yaml        setlocal sw=2 sts=2 ts=2 et
-"  autocmd FileType html        setlocal sw=4 sts=4 ts=4 et
-"  autocmd FileType css         setlocal sw=4 sts=4 ts=4 et
-"  autocmd FileType scss        setlocal sw=4 sts=4 ts=4 et
-"  autocmd FileType sass        setlocal sw=4 sts=4 ts=4 et
-"  autocmd FileType javascript  setlocal sw=4 sts=4 ts=4 et
-"endif
-
-cnoremap <C-A> <Home>
-cnoremap <C-F> <Right>
-cnoremap <C-B> <Left>
-cnoremap <Esc>b <S-Left>
-cnoremap <Esc>f <S-Right>
+if has("autocmd")
+  "ファイルタイプの検索を有効にする
+  filetype plugin on
+  "ファイルタイプに合わせたインデントを利用
+  filetype indent on
+  "sw=softtabstop, sts=shiftwidth, ts=tabstop, et=expandtabの略
+  autocmd FileType c           setlocal sw=4 sts=4 ts=4 et
+  autocmd FileType html        setlocal sw=4 sts=4 ts=4 et
+  autocmd FileType ruby        setlocal sw=2 sts=2 ts=2 et
+  autocmd FileType js          setlocal sw=4 sts=4 ts=4 et
+  autocmd FileType zsh         setlocal sw=4 sts=4 ts=4 et
+  autocmd FileType python      setlocal sw=4 sts=4 ts=4 et
+  autocmd FileType scala       setlocal sw=4 sts=4 ts=4 et
+  autocmd FileType json        setlocal sw=4 sts=4 ts=4 et
+  autocmd FileType yml        setlocal sw=2 sts=2 ts=2 et
+  autocmd FileType yaml        setlocal sw=2 sts=2 ts=2 et
+  autocmd FileType html        setlocal sw=4 sts=4 ts=4 et
+  autocmd FileType css         setlocal sw=4 sts=4 ts=4 et
+  autocmd FileType scss        setlocal sw=4 sts=4 ts=4 et
+  autocmd FileType sass        setlocal sw=4 sts=4 ts=4 et
+  autocmd FileType javascript  setlocal sw=4 sts=4 ts=4 et
+endif
 
 "autopep8を<shift>+fで実行
 function! Preserve(command)
