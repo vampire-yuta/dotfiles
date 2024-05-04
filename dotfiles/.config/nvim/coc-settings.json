@@ -57,6 +57,8 @@
         }
       }
     }
-  }
+  },
+  "clangd.arguments": ["--log", "verbose"],
+  "clangd.trace.server": "verbose"
 }
 
