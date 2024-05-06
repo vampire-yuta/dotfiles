@@ -65,6 +65,13 @@ noremap <Right> <Nop>
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+" コマンドモード時のキー操作
+cnoremap <C-A> <Home>
+cnoremap <C-F> <Right>
+cnoremap <C-B> <Left>
+cnoremap <Esc>b <S-Left>
+cnoremap <Esc>f <S-Right>
+
 " Plugins
 call plug#begin()
 Plug 'vim-jp/vimdoc-ja'    " vim Plugin日本語化
@@ -469,3 +476,4 @@ nnoremap <silent> <leader>te :<c-u>tabedit<cr>
 nnoremap <silent> <leader>tc :<c-u>tabclose<cr>
 nnoremap <silent> <leader>to :<c-u>tabonly<cr>
 nnoremap <silent> <leader>ts :<c-u>tabs<cr>
+
