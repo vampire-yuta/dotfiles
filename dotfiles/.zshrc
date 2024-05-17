@@ -198,6 +198,8 @@ export PATH="$PATH:/Users/yuta/.local/bin"
 alias k='kubectl'
 alias ki='kubectl-iexec'
 alias kc='kubectl-ctx'
+alias kbc='kubie ctx'
+alias kbn='kubie ns'
 [[ /usr/local/bin/kubectl ]] && source <(kubectl completion zsh)
 export PATH="${PATH}:${HOME}/.krew/bin"
 
