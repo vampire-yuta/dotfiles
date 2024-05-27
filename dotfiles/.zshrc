@@ -197,7 +197,7 @@ export PATH="$PATH:/Users/yuta/.local/bin"
 # kubernetes
 alias k='kubectl'
 alias ki='kubectl-iexec'
-alias kc='kubectl-ctx'
+alias kc='kubie ctx'
 alias kbc='kubie ctx'
 alias kbn='kubie ns'
 [[ /usr/local/bin/kubectl ]] && source <(kubectl completion zsh)
