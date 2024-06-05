@@ -126,6 +126,7 @@ Plug 'thinca/vim-qfreplace' " QuickFix全置換 :Qfreplaceで起動  :%s/case/te
 Plug 'romgrk/barbar.nvim' " ウインドウ丈夫に常にバッファを表示
 Plug 'nvim-tree/nvim-web-devicons' " OPTIONAL: for file icons(romgrk/barbar.nvim)
 Plug 'lewis6991/gitsigns.nvim' " OPTIONAL: for git status(romgrk/barbar.nvim)
+Plug 'kazhala/close-buffers.nvim' " :BDelete thisでカレントバッファ閉じる
 call plug#end()
 
 
