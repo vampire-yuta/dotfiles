@@ -24,7 +24,6 @@ install_go(){
 	sudo apt update -y
 	sudo apt install golang -y
 	go version
-	go install github.com/jesseduffield/lazygit@latest
 	git clone https://github.com/syndbg/goenv.git ~/.goenv
 }
 
