@@ -1,0 +1,11 @@
+# neovim
+dotfiles/.config/nvim/init.vim                ${HOME}/.config/nvim/init.vim
+dotfiles/.config/nvim/coc-settings.json       ${HOME}/.config/nvim/coc-settings.json
+
+# fish
+dotfiles/config.fish                ${HOME}/.config/fish/config.fish
+
+# tmux
+dotfiles/.tmux.conf                ${HOME}/.tmux.conf
+dotfiles/.tmux/ide.sh                ${HOME}/.tmux/ide.sh
+dotfiles/.tmux/session.conf                ${HOME}/.tmux/session.conf

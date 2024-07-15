@@ -10,15 +10,38 @@ __remove_linklist_comment() {(
         $1
 )}
 
+
+# OSの判定
+detect_os() {
+    case "$(uname -s)" in
+        Darwin)
+            echo "mac"
+            ;;
+        Linux)
+            echo "linux"
+            ;;
+        *)
+            echo "unknown"
+            ;;
+    esac
+}
+
 # シンボリックリンクを作成
-cd ${dotfiles_root}/dotfiles
-linklist="linklist.txt"
-[ ! -r "$linklist" ] && return
-__remove_linklist_comment "$linklist" | while read target link; do
-    # ~ や環境変数を展開
-    target=$(eval echo "${PWD}/${target}")
-    link=$(eval echo "${link}")
-    # シンボリックリンクを作成
-    mkdir -p $(dirname ${link})
-    ln -fsn ${target} ${link}
-done
+create_symlinks() {
+    os=$1
+    #cd ${dotfiles_root}/dotfiles
+    linklist="${os}/linklist.txt"
+    [ ! -r "$linklist" ] && return
+    echo $linklist
+    __remove_linklist_comment "$linklist" | while read target link; do
+        target=$(eval echo "${PWD}/${target}")
+        link=$(eval echo "${link}")
+	echo ${link}
+        mkdir -p $(dirname ${link})
+        ln -fsn ${target} ${link}
+    done
+}
+
+os=$(detect_os)
+echo $os
+create_symlinks $os
