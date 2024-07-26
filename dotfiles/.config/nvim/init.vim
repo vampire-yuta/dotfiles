@@ -32,12 +32,12 @@ if has('wsl')
 	let g:clipboard = {
 			\   'name': 'myClipboard',
 			\   'copy': {
-			\      '+': 'win32yank.exe -i',
-			\      '*': 'win32yank.exe -i',
+			\      '+': 'lemonade copy',
+			\      '*': 'lemonade copy',
 			\    },
 			\   'paste': {
-			\      '+': 'win32yank.exe -o',
-			\      '*': 'win32yank.exe -o',
+			\      '+': 'lemonade paste',
+			\      '*': 'lemonade paste',
 			\   },
 			\   'cache_enabled': 1,
 			\ }
