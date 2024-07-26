@@ -46,6 +46,12 @@
 					"PackageIdentifier" : "Notion.Notion"
 				},
 				{
+					"PackageIdentifier" : "dbeaver.dbeaver"
+				},
+				{
+					"PackageIdentifier" : "Lemonade.Lemonade"
+				},
+				{
 					"PackageIdentifier" : "tailscale.tailscale"
 				},
 				{
@@ -73,8 +79,11 @@
 					"PackageIdentifier" : "Nextcloud.NextcloudDesktop"
 				},
 				{
-                                        "PackageIdentifier" : "GoLang.Go"
-                                },
+					"PackageIdentifier" : "GoLang.Go"
+				},
+				{
+					"PackageIdentifier" : "Neovim.Neovim"
+				}
 			],
 			"SourceDetails" : 
 			{
