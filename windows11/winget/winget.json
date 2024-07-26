@@ -22,6 +22,9 @@
 					"PackageIdentifier" : "Google.Chrome.EXE"
 				},
 				{
+					"PackageIdentifier" : "Oracle.VirtualBox"
+				},
+				{
 					"PackageIdentifier" : "Microsoft.WindowsTerminal"
 				},
 				{
