@@ -13,16 +13,7 @@
 					"PackageIdentifier" : "7zip.7zip"
 				},
 				{
-					"PackageIdentifier" : "AnyDeskSoftwareGmbH.AnyDesk"
-				},
-				{
 					"PackageIdentifier" : "AutoHotkey.AutoHotkey"
-				},
-				{
-					"PackageIdentifier" : "Canonical.Ubuntu.2204"
-				},
-				{
-					"PackageIdentifier" : "voidtools.Everything"
 				},
 				{
 					"PackageIdentifier" : "Git.Git"
@@ -80,7 +71,10 @@
 				},
 				{
 					"PackageIdentifier" : "Nextcloud.NextcloudDesktop"
-				}
+				},
+				{
+                                        "PackageIdentifier" : "GoLang.Go"
+                                },
 			],
 			"SourceDetails" : 
 			{
