@@ -1,20 +1,23 @@
+set -g theme_color_scheme dracula # カラーテーマを dracula に
+
+# ----------
+# bobthefish config
+# ----------
+set -g fish_prompt_pwd_dir_length 0  # ディレクトリ省略しない
+set -g theme_newline_cursor no  # プロンプトを改行した先に設ける
+set -g theme_display_git_master_branch yes  # git の branch を表示
+set -g theme_color_scheme dracula
+set -g theme_display_date yes
+set -g theme_display_cmd_duration yes  # コマンド実行時間の非表示
+set -g theme_display_date yes
+set -g theme_display_virtualenv no
+set -g theme_display_vi yes
+
 # peco
 function fish_user_key_bindings
   bind \cr 'peco_select_history (commandline -b)'
   bind \c] peco_select_ghq_repository
 end
-
-# fish_prompt
-function fish_prompt
-  echo -n (set_color cyan)(prompt_pwd) (set_color green)'❯'
- 
-  # Git
-  set last_status $status
-  printf '%s ' (__fish_git_prompt)
-  set_color normal
-end
-
-set fish_theme agnoster
 
 # Terraform
 export PATH="$HOME/.tfenv/bin:$PATH"
@@ -33,9 +36,6 @@ set -x PATH $GOPATH/bin $PATH
 set -x GO111MODULE on
 
 set -gx PATH $PATH $HOME/.krew/bin
-
-set fish_function_path $fish_function_path "/usr/share/powerline/bindings/fish"
-powerline-setup
 
 set -x EDITOR vim
 eval (direnv hook fish)
@@ -115,3 +115,6 @@ test -s ~/.config/envman/load.fish; and source ~/.config/envman/load.fish
 
 
 # k9s
+
+# venv
+source ~/venv/bin/activate.fish
