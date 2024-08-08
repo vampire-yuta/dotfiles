@@ -86,7 +86,10 @@
 				},
 				{
 					"PackageIdentifier" : "Neovim.Neovim"
-				}
+				},
+				{
+                                        "PackageIdentifier" : "DevToys-app.DevToys"
+                                },
 			],
 			"SourceDetails" : 
 			{
