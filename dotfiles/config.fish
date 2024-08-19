@@ -12,6 +12,7 @@ set -g theme_display_cmd_duration yes  # コマンド実行時間の非表示
 set -g theme_display_date yes
 set -g theme_display_virtualenv no
 set -g theme_display_vi yes
+set -g theme_display_k8s_context no
 
 # peco
 function fish_user_key_bindings
@@ -84,7 +85,7 @@ alias g="git"
 alias k="kubectl"
 alias ki="kubectl-iexec"
 alias kn="kubectl-ns"
-alias kc="kubectl-ctx"
+alias kc="kubie ctx"
 alias ..="cd ../"
 alias d="docker"
 alias doc="docker-compose"
