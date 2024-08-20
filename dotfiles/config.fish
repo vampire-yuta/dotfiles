@@ -119,3 +119,6 @@ test -s ~/.config/envman/load.fish; and source ~/.config/envman/load.fish
 
 # venv
 source ~/venv/bin/activate.fish
+
+# mysql
+export MYSQL_HISTFILESIZE=10000000
