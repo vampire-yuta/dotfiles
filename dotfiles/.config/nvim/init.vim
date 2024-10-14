@@ -127,6 +127,7 @@ Plug 'romgrk/barbar.nvim' " ウインドウ丈夫に常にバッファを表示
 Plug 'nvim-tree/nvim-web-devicons' " OPTIONAL: for file icons(romgrk/barbar.nvim)
 Plug 'lewis6991/gitsigns.nvim' " OPTIONAL: for git status(romgrk/barbar.nvim)
 Plug 'kazhala/close-buffers.nvim' " :BDelete thisでカレントバッファ閉じる
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' } " https://github.com/iamcco/markdown-preview.nvim
 call plug#end()
 
 
