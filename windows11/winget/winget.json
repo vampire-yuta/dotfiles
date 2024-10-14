@@ -46,9 +46,6 @@
 					"PackageIdentifier" : "Obsidian.Obsidian"
 				},
 				{
-					"PackageIdentifier" : "Notion.Notion"
-				},
-				{
 					"PackageIdentifier" : "dbeaver.dbeaver"
 				},
 				{
@@ -65,9 +62,6 @@
 				},
 				{
 					"PackageIdentifier" : "Python.Launcher"
-				},
-				{
-					"PackageIdentifier" : "Google.GoogleDrive"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.VisualStudioCode"
