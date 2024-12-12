@@ -45,10 +45,10 @@ install_peco(){
 }
 
 
-install_packages
+#install_packages
 install_fisher
 install_vimplug
 install_nvm
 install_go
-install_win32yank
+#install_win32yank
 install_peco
