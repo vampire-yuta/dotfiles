@@ -147,6 +147,22 @@ let g:lsp_diagnostics_highlights_delay = 50              " Diagnosticsの指摘�
 let g:lsp_diagnostics_highlights_insert_mode_enabled = 0 " 挿入モード時、Diagnosticsの指摘箇所自体の文字ハイライトを表示しない
 let g:lsp_document_code_action_signs_enabled = 0         " 画面左端のサイン列にコードアクションのアイコン非表示
 
+" pylspの設定
+" E501を無視する
+let g:lsp_settings = {
+\   'pylsp-all': {
+\     'workspace_config': {
+\       'pylsp': {
+\         'plugins': {
+\           'pycodestyle': {
+\             'ignore': ["E501"]
+\           }
+\         }
+\       }
+\     }
+\   },
+\}
+
 
 inoremap <silent><expr> <c-space> coc#refresh()
 
