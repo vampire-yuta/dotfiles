@@ -9,3 +9,6 @@ dotfiles/config.fish                ${HOME}/.config/fish/config.fish
 dotfiles/.tmux.conf                ${HOME}/.tmux.conf
 dotfiles/.tmux/ide.sh                ${HOME}/.tmux/ide.sh
 dotfiles/.tmux/session.conf                ${HOME}/.tmux/session.conf
+
+# kitty
+dotfiles/.config/kitty/kitty.conf ${HOME}/.config/kitty/kitty.conf
