@@ -98,13 +98,11 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter' " Git管理下のファイルを編集すると左にマークが表示されるように
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 " Plug 'VundleVim/Vundle.vim'
 Plug 'stephpy/vim-yaml'
 Plug 'prabirshrestha/vim-lsp' " VimLSP
 Plug 'mattn/vim-lsp-settings' " VimLSP LspInstallServerでインストール LspManagedServerでLSP管理画面呼び出し
 Plug 'yaegassy/coc-ansible', {'do': 'yarn install --frozen-lockfile'} " Ansible-lsp
-Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-commentary' " CommentOut
 Plug 'jiangmiao/auto-pairs' " 自動でカッコを閉じる
 Plug 'mbbill/undotree'      " Undo管理
@@ -122,19 +120,13 @@ Plug '~/.config/nvim/unmanagerd_plugins/sweep_trail'
 Plug '~/.config/nvim/unmanagerd_plugins/autofmt'
 Plug 'towolf/vim-helm' "helmのsyntax hirighter
 Plug 'terryma/vim-multiple-cursors' "ビジュアルモードでCtrl+Nで同時編集
-" Use release branch (recommend)
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'dense-analysis/ale'
-
-" Or build from source code by using yarn: https://yarnpkg.com
-Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
 Plug 'mtth/scratch.vim'
 Plug 'liuchengxu/vista.vim'                         " LSP シンボル、タグを表示および検索
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-endwise'
 Plug 'alvan/vim-closetag'  " html閉じタグを自動補完
 Plug 'hashivim/vim-terraform' " terraform syntax highlight
-Plug 'prabirshrestha/vim-lsp' " vimのLSP
 Plug 'chrisbra/csv.vim'       " csv編集
 Plug 'dart-lang/dart-vim-plugin' " dart Plugin
 Plug 'thinca/vim-qfreplace' " QuickFix全置換 :Qfreplaceで起動  :%s/case/test/gで置換
