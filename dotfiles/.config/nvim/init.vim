@@ -92,7 +92,7 @@ call plug#begin()
 Plug 'vim-jp/vimdoc-ja'    " vim Plugin日本語化
 Plug 'itchyny/lightline.vim' " タブラインステータスラインを表示
 Plug 'ntk148v/vim-horizon'
-Plug 'preservim/nerdtree'
+
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'tpope/vim-fugitive'
@@ -100,8 +100,6 @@ Plug 'airblade/vim-gitgutter' " Git管理下のファイルを編集すると左
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Plug 'VundleVim/Vundle.vim'
 Plug 'stephpy/vim-yaml'
-Plug 'prabirshrestha/vim-lsp' " VimLSP
-Plug 'mattn/vim-lsp-settings' " VimLSP LspInstallServerでインストール LspManagedServerでLSP管理画面呼び出し
 Plug 'yaegassy/coc-ansible', {'do': 'yarn install --frozen-lockfile'} " Ansible-lsp
 Plug 'tpope/vim-commentary' " CommentOut
 Plug 'jiangmiao/auto-pairs' " 自動でカッコを閉じる
@@ -114,8 +112,7 @@ Plug 'famiu/nvim-reload' "リロード
 Plug 'chase/vim-ansible-yaml' "yamlオートインデント
 Plug 'nvie/vim-flake8'
 Plug 'tell-k/vim-autopep8'
-Plug 'jeetsukumaran/vim-buffergator'
-Plug 'vim-scripts/buftabs'
+
 Plug '~/.config/nvim/unmanagerd_plugins/sweep_trail'
 Plug '~/.config/nvim/unmanagerd_plugins/autofmt'
 Plug 'towolf/vim-helm' "helmのsyntax hirighter
@@ -141,34 +138,6 @@ call plug#end()
 if !has('gui_running')
   set t_Co=256
 endif
-
-" VimLSPの設定
-let g:lsp_diagnostics_enabled = 1                        " Diagnosticsを有効にする
-let g:lsp_diagnostics_echo_cursor = 1                    " カーソル下のエラー、警告、情報、ヒントを画面下部のコマンドラインに表示
-let g:lsp_diagnostics_echo_delay = 50                    " Diagnosticsの表示の遅延を50msに設定
-let g:lsp_diagnostics_float_cursor = 1                   " カーソル下のエラー、警告、情報、ヒントをフロート表示
-let g:lsp_diagnostics_signs_enabled = 1                  " 画面左端のサイン列にエラー、警告、情報、ヒントのアイコンを表示
-let g:lsp_diagnostics_signs_delay = 50                   " Diagnosticsのサイン列の表示の遅延を50msに設定
-let g:lsp_diagnostics_signs_insert_mode_enabled = 0      " 挿入モード時、Diagnosticsのサイン列を表示しない
-let g:lsp_diagnostics_highlights_delay = 50              " Diagnosticsの指摘箇所自体の文字ハイライト表示の遅延を50msに設定
-let g:lsp_diagnostics_highlights_insert_mode_enabled = 0 " 挿入モード時、Diagnosticsの指摘箇所自体の文字ハイライトを表示しない
-let g:lsp_document_code_action_signs_enabled = 0         " 画面左端のサイン列にコードアクションのアイコン非表示
-
-" pylspの設定
-" E501を無視する
-let g:lsp_settings = {
-\   'pylsp-all': {
-\     'workspace_config': {
-\       'pylsp': {
-\         'plugins': {
-\           'pycodestyle': {
-\             'ignore': ["E501"]
-\           }
-\         }
-\       }
-\     }
-\   },
-\}
 
 
 inoremap <silent><expr> <c-space> coc#refresh()
@@ -445,17 +414,6 @@ endfunction
 autocmd FileType python nnoremap <S-f> :call Autopep8()<CR>
 
 
-"buftabs
-" バッファタブにパスを省略してファイル名のみ表示する
-let g:buftabs_only_basename=1
-" バッファタブをステータスライン内に表示する
-let g:buftabs_in_statusline=1
-" 現在のバッファをハイライト
-let g:buftabs_active_highlight_group="Visual"
-" ステータスライン
-set statusline=%=\ [%{(&fenc!=''?&fenc:&enc)}/%{&ff}]\[%Y]\[%04l,%04v][%p%%]
-" ステータスラインを常に表示
-set laststatus=2
 
 " 前のバッファへ移動
 nmap <C-l> :bn<CR>

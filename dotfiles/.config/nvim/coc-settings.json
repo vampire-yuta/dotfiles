@@ -59,6 +59,9 @@
     }
   },
   "clangd.arguments": ["--log", "verbose"],
-  "clangd.trace.server": "verbose"
+  "clangd.trace.server": "verbose",
+  "python.linting.pycodestyleEnabled": true,
+  "python.linting.pycodestyleArgs": ["--ignore=E501"],
+  "pylsp.plugins.pycodestyle.ignore": ["E501"]
 }
 
