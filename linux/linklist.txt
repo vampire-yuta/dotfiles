@@ -5,6 +5,9 @@ dotfiles/.config/nvim/coc-settings.json       ${HOME}/.config/nvim/coc-settings.
 # fish
 dotfiles/config.fish                ${HOME}/.config/fish/config.fish
 
+# starship
+dotfiles/.config/starship.toml      ${HOME}/.config/starship.toml
+
 # tmux
 dotfiles/.tmux.conf                ${HOME}/.tmux.conf
 dotfiles/.tmux/ide.sh                ${HOME}/.tmux/ide.sh

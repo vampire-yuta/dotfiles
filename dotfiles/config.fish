@@ -1,4 +1,9 @@
 # ----------
+# Starship prompt
+# ----------
+starship init fish | source
+
+# ----------
 # OS Detection
 # ----------
 if string match -q "*microsoft*" (uname -r)
