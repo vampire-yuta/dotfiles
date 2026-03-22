@@ -56,6 +56,20 @@ elseif has('unix') && executable('lemonade')
         \   },
         \   'cache_enabled': 1,
         \ }
+elseif has('unix') && executable('wl-copy')
+  " Wayland環境
+  let g:clipboard = {
+        \   'name': 'waylandClipboard',
+        \   'copy': {
+        \      '+': 'wl-copy',
+        \      '*': 'wl-copy --primary',
+        \    },
+        \   'paste': {
+        \      '+': 'wl-paste --no-newline',
+        \      '*': 'wl-paste --no-newline --primary',
+        \   },
+        \   'cache_enabled': 1,
+        \ }
 else
   " GUIありLinuxなどの通常パターン
   set clipboard&
