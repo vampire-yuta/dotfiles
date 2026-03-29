@@ -91,4 +91,7 @@ if set -q IS_WSL
     export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"
     export PATH="$PATH:/mnt/c/Program Files/Oracle/VirtualBox"
     export PATH="$PATH:/opt/mssql-tools/bin"
+
+    # VS Code (Windows側のバイナリを使用)
+    fish_add_path "/mnt/c/Users/yuta/AppData/Local/Programs/Microsoft VS Code/bin"
 end
