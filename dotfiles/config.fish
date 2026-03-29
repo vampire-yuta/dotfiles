@@ -89,6 +89,8 @@ if set -q IS_WSL
     alias clip="clip.exe"
     alias getip="curl ifconfig.io | clip.exe"
     export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"
+    export VAGRANT_HOME="$HOME/.vagrant.d"
+    export PATH="$PATH:/mnt/c/Windows/System32:/mnt/c/Windows/System32/WindowsPowerShell/v1.0"
     export PATH="$PATH:/mnt/c/Program Files/Oracle/VirtualBox"
     export PATH="$PATH:/opt/mssql-tools/bin"
 
