@@ -1,40 +1,139 @@
 {
 	"$schema" : "https://aka.ms/winget-packages.schema.2.0.json",
-	"CreationDate" : "2024-05-03T15:05:13.289-00:00",
-	"Sources" : 
+	"CreationDate" : "2026-04-29T00:00:00.000-00:00",
+	"Sources" :
 	[
 		{
-			"Packages" : 
+			"Packages" :
 			[
+				{
+					"PackageIdentifier" : "7zip.7zip"
+				},
 				{
 					"PackageIdentifier" : "AgileBits.1Password"
 				},
 				{
-					"PackageIdentifier" : "7zip.7zip"
+					"PackageIdentifier" : "Anthropic.Claude"
+				},
+				{
+					"PackageIdentifier" : "Anysphere.Cursor"
+				},
+				{
+					"PackageIdentifier" : "ArduinoSA.IDE.stable"
 				},
 				{
 					"PackageIdentifier" : "AutoHotkey.AutoHotkey"
 				},
 				{
+					"PackageIdentifier" : "Canonical.Ubuntu"
+				},
+				{
+					"PackageIdentifier" : "clsid2.mpc-hc"
+				},
+				{
+					"PackageIdentifier" : "DBeaver.DBeaver.Community"
+				},
+				{
+					"PackageIdentifier" : "DevToys-app.DevToys"
+				},
+				{
+					"PackageIdentifier" : "FilesCommunity.Files"
+				},
+				{
 					"PackageIdentifier" : "Git.Git"
+				},
+				{
+					"PackageIdentifier" : "GoLang.Go"
 				},
 				{
 					"PackageIdentifier" : "Google.Chrome.EXE"
 				},
 				{
-					"PackageIdentifier" : "Oracle.VirtualBox"
+					"PackageIdentifier" : "Google.GoogleDrive"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.WindowsTerminal"
+					"PackageIdentifier" : "HandBrake.HandBrake"
 				},
 				{
-					"PackageIdentifier" : "Mozilla.Firefox"
+					"PackageIdentifier" : "Hashicorp.Vagrant"
+				},
+				{
+					"PackageIdentifier" : "HeidiSQL.HeidiSQL"
+				},
+				{
+					"PackageIdentifier" : "JGraph.Draw"
 				},
 				{
 					"PackageIdentifier" : "JanDeDobbeleer.OhMyPosh"
 				},
 				{
+					"PackageIdentifier" : "JohnMacFarlane.Pandoc"
+				},
+				{
+					"PackageIdentifier" : "Lemonade.Lemonade"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.OneDrive"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.PowerToys"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.Sysinternals.RDCMan"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.Teams"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VisualStudioCode"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.WSL"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.WindowsTerminal"
+				},
+				{
+					"PackageIdentifier" : "Mozilla.Firefox.ja"
+				},
+				{
+					"PackageIdentifier" : "Neovim.Neovim"
+				},
+				{
+					"PackageIdentifier" : "Nextcloud.NextcloudDesktop"
+				},
+				{
+					"PackageIdentifier" : "Nextcloud.Talk"
+				},
+				{
+					"PackageIdentifier" : "Obsidian.Obsidian"
+				},
+				{
+					"PackageIdentifier" : "Oracle.MySQLWorkbench"
+				},
+				{
+					"PackageIdentifier" : "Oracle.VirtualBox"
+				},
+				{
 					"PackageIdentifier" : "Postman.Postman"
+				},
+				{
+					"PackageIdentifier" : "Python.Launcher"
+				},
+				{
+					"PackageIdentifier" : "Python.Python.3.12"
+				},
+				{
+					"PackageIdentifier" : "RARLab.WinRAR"
+				},
+				{
+					"PackageIdentifier" : "Rufus.Rufus"
+				},
+				{
+					"PackageIdentifier" : "SlackTechnologies.Slack"
+				},
+				{
+					"PackageIdentifier" : "Tailscale.Tailscale"
 				},
 				{
 					"PackageIdentifier" : "WiresharkFoundation.Wireshark"
@@ -43,49 +142,13 @@
 					"PackageIdentifier" : "Zoom.Zoom.EXE"
 				},
 				{
-					"PackageIdentifier" : "Obsidian.Obsidian"
+					"PackageIdentifier" : "vim.vim"
 				},
 				{
-					"PackageIdentifier" : "dbeaver.dbeaver"
-				},
-				{
-					"PackageIdentifier" : "Lemonade.Lemonade"
-				},
-				{
-					"PackageIdentifier" : "tailscale.tailscale"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.PowerToys"
-				},
-				{
-					"PackageIdentifier" : "clsid2.mpc-hc"
-				},
-				{
-					"PackageIdentifier" : "Python.Launcher"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VisualStudioCode"
-				},
-				{
-					"PackageIdentifier" : "SlackTechnologies.Slack"
-				},
-				{
-					"PackageIdentifier" : "Python.Python.3.12"
-				},
-				{
-					"PackageIdentifier" : "Nextcloud.NextcloudDesktop"
-				},
-				{
-					"PackageIdentifier" : "GoLang.Go"
-				},
-				{
-					"PackageIdentifier" : "Neovim.Neovim"
-				},
-				{
-                                        "PackageIdentifier" : "DevToys-app.DevToys"
-                                },
+					"PackageIdentifier" : "voidtools.Everything"
+				}
 			],
-			"SourceDetails" : 
+			"SourceDetails" :
 			{
 				"Argument" : "https://cdn.winget.microsoft.com/cache",
 				"Identifier" : "Microsoft.Winget.Source_8wekyb3d8bbwe",
@@ -94,5 +157,5 @@
 			}
 		}
 	],
-	"WinGetVersion" : "1.7.10861"
+	"WinGetVersion" : "1.28.240"
 }
