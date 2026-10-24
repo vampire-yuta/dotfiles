@@ -59,7 +59,10 @@ alias ide="sh $HOME/.tmux/ide.sh"
 alias k="kubectl"
 alias ki="kubectl-iexec"
 alias kn="kubectl-ns"
-alias kc="kubie ctx"
+function kc --description 'kubectl context switcher (fzf)'
+    set -l ctx (kubectl config get-contexts -o name | fzf --no-sort --prompt='context> ')
+    test -n "$ctx"; and kubectl config use-context $ctx
+end
 alias kube-busybox="kubectl run -i --tty busybox --image=busybox --generator=run-pod/v1 --rm -- sh"
 
 # Docker
