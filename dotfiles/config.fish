@@ -74,7 +74,7 @@ alias drm='docker_rm_by_name'
 # ----------
 # Tools
 # ----------
-eval (direnv hook fish)
+direnv hook fish | source
 
 # mysql
 export MYSQL_HISTFILESIZE=10000000
